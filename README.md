@@ -1,29 +1,22 @@
-## About
-   - This is the personal project for unit 12(Web) of [Data Visualization and Analytics](https://bootcamp.umn.edu/data/landing%20full/)(graded A).
-   - Bulit a dashboard to visualize the lattitude dependence of the global weather. The dataset and figs are fed from another project(i.e., [homework project](https://github.com/yongjinjiang/Python-API) for unit 06(Python-APIs)), in which  the weather for more than 500  randomly chosen cities were collected from the [openweathermap API](https://openweathermap.org/api) for current  date. For more details, see [here](#the-original-text-of-the-homework-assignment).
-   - A snapshot of the app: 
-<img src="./Images/app.png " width="600" height="400">
-
-   - The web-link for the app of this project is [here](https://yongjinjiang.github.io/Web-visualization-dashboard/).
-   - Main tools used in this project: html, css, [Bootstrap](https://getbootstrap.com/).
-   
-## Usage 
-   - Clone this repo as well as the [repo for Python-APIs](https://github.com/yongjinjiang/Python-API). Use the main.ipynb of the second repo to generate a new list of cities and collect new png figures for the current weather data. Feed those figures into ./Resources folder of the current project. Then, you can open the index.html and play with the dashboard. You might get different observations from mine described in the following. 
-   
-## Some observations
-   - From the weather data for 538 cities collectd today(11/07/2018), we conclude that temperature is peaked around 80 Fahrenheit near the equator from -20 to 30 degrees of Latitude. It continually drops to 30 Fahrenheit(even lower for several cities) in the region of 40 to 80 degree of latitude.
-   - There is no obvious dependence of cloudiness on latitude. Yet somehow there are several cloudiness values, 0, 20, 40, 78,97, are most crowded with citis all over the world, much more than other values.
-   - The humidity percentage has only weak dependence on the latitude. It takes smallest value around -20(Southern Hemisphere) and 20 latitude(Northern Hemisphere).
-   - There is no obvious dependence of wind speed on latitude. The wind speed in general is from 0 mph to 15 mph.
-
-## **_The original text of the homework assignment:_** 
-# Unit 12 | Assignment - Web Visualization Dashboard (Latitude)
+# Web Design Homework - Web Visualization Dashboard (Latitude)
 
 ## Background
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
 ![Images/landingResize.png](Images/landingResize.png)
+
+### Before You Begin
+
+1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
+
+2. Clone the new repository to your computer.
+
+3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
+
+4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
+
+5. Push the above changes to GitHub or GitLab.
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
@@ -51,7 +44,7 @@ The website must consist of 7 pages total, including:
 * A ["Data" page](#data-page) that:
   * Displays a responsive table containing the data used in the visualizations.
     * The table must be a bootstrap table component.
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. You may use a csv-to-html table conversion tool, e.g. [ConvertCSV](http://www.convertcsv.com/csv-to-html.htm).
+    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
 
 The website must, at the top of every page, have a navigation menu that:
 
@@ -127,3 +120,7 @@ Large screen:
 
 Small screen:
 ![nav menu small screen](Images/nav-sm.png)
+
+### Copyright
+
+Trilogy Education Services © 2019. All Rights Reserved.
